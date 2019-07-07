@@ -1,0 +1,17 @@
+﻿<Window x:Class="KinectColorImageWpf.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="640" Width="960">
+    <Grid>
+        <StackPanel Orientation="Vertical">
+            <StackPanel Orientation="Horizontal">
+                <Button Name="btnOpenSensor" Width="100" MinHeight="30" Margin="10,5,10,5" Click="btnOpenSensor_Click">OpenSensor</Button>
+                <Button Name="btnCloseSensor" Width="100" MinHeight="30" Margin="10,5,10,5" Click="btnCloseSensor_Click">CloseSensor</Button>
+                <Button Name="btnCapture" Width="100" MinHeight="30" Margin="10,5,10,5" Click="btnCapture_Click">Capture</Button>
+            </StackPanel>
+            <StackPanel>
+                <Viewbox Name="viewBox"></Viewbox>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Window>
